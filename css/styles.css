@@ -1,0 +1,53 @@
+.inner-section {
+    border: 1px solid gray;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.first {
+    background: blue;
+}
+
+.second {
+    background: red;
+}
+
+.third {
+    background: green;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { /*Tablet*/
+    .wrapper {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+    }
+    .first {
+        width: 50%;
+    }
+    .second {
+        width: 50%;
+        margin-left: auto;
+    }
+    .third {
+        width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 992px) { /*Desktop*/
+   .container {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+   }
+
+   .wrapper {
+        display: flex;
+        gap: 5px;
+        width: 66.7%;
+    }
+   .third {
+        width: 33.3%;
+   }
+  }
